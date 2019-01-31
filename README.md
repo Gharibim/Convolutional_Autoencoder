@@ -3,7 +3,7 @@ Convolutional Auto-encoder trained on MSCOCO + Flickr 30k. Total ~ 200k images <
 The model works with both `jpg` and `png` images.
 
 To retrain the model: `python3 train_encoder.py` </br>
-If you want to retrain the model, do not forget to put your images in `0` folder in `images`. </br></br>
+If you want to retrain the model, do not forget to put your images in `0` folder in `images`. </br>
 
 To evaluate the model: `python3 evaluate.py <checkpoints/checkpointname> <path_to_image>`  </br>
 If you clone this repo, put `model.h5` instead of `checkpoint_name` </br>
