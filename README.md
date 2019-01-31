@@ -7,11 +7,11 @@ If you want to retrain the model, do not forget to put your images in `0` folder
 
 To evaluate the model: `python3 evaluate.py <checkpoints/checkpointname> <path_to_image>`  </br>
 If you clone this repo, put `model.h5` instead of `checkpoint_name` </br>
-The output image by default will have `jpg` extension. You can change that in `evaluate.py`</br></br>
+The output image by default will have `jpg` extension. You can change that in `evaluate.py`</br>
 
 JPG image example:</br>
 <img src="puppy.jpg" width=300></br>
-<img src="output.jpg" width=300></br></br></br>
+<img src="output.jpg" width=300></br></br>
 
 
 PNG image example:</br>
