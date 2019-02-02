@@ -9,6 +9,8 @@ import train_encoder
 
 # setup
 logging.basicConfig(level=logging.DEBUG)
+np.set_printoptions(threshold=sys.maxsize)
+
 
 
 # functions
@@ -35,8 +37,17 @@ def main():
     pred = model.predict(img_arr)
 
     logging.debug('saving output to output.jpg')
-    pred = pred[0]
-    print("Holaaaaaa", pred)
+    pred = pred[0].tolist()
+    # print(pred.tolist())
+    
+    #Write the vector to a file
+    # with open('output.txt', 'w') as f:
+    #     for item in pred.tolist():
+    #         f.write("%s\n" % item)
+
+
+
+    Input = pred.tolist()
     pred_img = image.array_to_img(pred)
     pred_img.save('output.jpg')
 
